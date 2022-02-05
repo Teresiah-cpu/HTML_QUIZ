@@ -6,13 +6,25 @@ function check() {
     var q4=document.quiz.question4.value;
     var q5=document.quiz.question5.value;
     var q6=document.quiz.question6.value;
-    var quiz=document.getElementById('quiz')
+    var result=document.getElementById('result');
+    var quiz=document.getElementById('quiz');
+    document.write(c);
     if (q1=="A markup language") {c++}
     if (q2=="Scope") {c++}
     if (q3=="Global variable") {c++}
     if (q4=="Local") {c++}
     if (q5=="var,const,let") {c++}
     if (q6=="React") {c++}
-       document.write(c);
+   
+    quiz.style.display="none";
+ 
+
+   
+    if (c<=3) {
+        result.textContent='Your result is ${c}. Retake!'
+    } else {
+        result.textContent='Your result is ${c}. Excellent.'
+
+    }
 
 }
