@@ -17,3 +17,12 @@ color: #492626;
 
 
 }
+#button{
+    background-color: green;
+    color: black;
+    font-size: 15px;
+    border: none;
+    height: 40px;
+    width: 100px;
+    border-radius: 4px;
+}
