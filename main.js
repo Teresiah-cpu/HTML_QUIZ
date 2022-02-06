@@ -8,23 +8,20 @@ function check() {
     var q6=document.quiz.question6.value;
     var result=document.getElementById('result');
     var quiz=document.getElementById('quiz');
-    document.write(c);
+    
     if (q1=="A markup language") {c++}
     if (q2=="Scope") {c++}
     if (q3=="Global variable") {c++}
     if (q4=="Local") {c++}
     if (q5=="var,const,let") {c++}
     if (q6=="React") {c++}
-   
-    quiz.style.display="none";
- 
 
-   
-    if (c<=3) {
-        result.textContent='Your result is ${c}. Retake!'
+    document.write(c);
+
+    if (c<+3) {
+    result.textContent='Your score is ${c}. not good.'
     } else {
-        result.textContent='Your result is ${c}. Excellent.'
-
+     result.textContent='Your score is ${c}. good.'
     }
-
+    
 }
